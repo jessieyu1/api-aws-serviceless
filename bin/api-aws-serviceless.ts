@@ -5,4 +5,3 @@ import { ApiAwsServicelessStack } from '../lib/api-aws-serviceless-stack';
 
 const app = new cdk.App();
 new ApiAwsServicelessStack(app, 'ApiAwsServicelessStack', {});
-new ApiAwsServicelessStack(app, 'ApiAwsServicelessStack2', {});
