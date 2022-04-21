@@ -3,9 +3,12 @@ import { Construct } from 'constructs';
 import {Code, Function as LambdaFunction, Runtime} from 'aws-cdk-lib/aws-lambda'
 import {join} from 'path';
 import { LambdaIntegration, RestApi } from 'aws-cdk-lib/aws-apigateway'
+import { GenericTable } from './GenericTable';
 export class ApiAwsServicelessStack extends Stack {
   
   private api = new RestApi(this, 'ApiAwsServiceless');
+  private spaceTable = new GenericTable('ApiAwsServicelessTable', 'ApiAwsServicelessId', this)
+
 
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
