@@ -16,12 +16,15 @@
     "aws-cdk": "2.20.0",
     "aws-cdk-lib": "^2.20.0",
     "constructs": "^10.0.121",
+    "esbuild": "^0.14.38",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
     "ts-node": "^9.1.1",
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "source-map-support": "^0.5.16"
+    "@types/uuid": "^8.3.4",
+    "source-map-support": "^0.5.16",
+    "uuid": "^8.3.2"
   }
 }
